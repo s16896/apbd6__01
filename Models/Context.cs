@@ -20,7 +20,6 @@ namespace apbd6.Models
         public virtual DbSet<Prescription> Prescription { get; set; }
         public virtual DbSet<Doctor> Doctor { get; set; }
         public virtual DbSet<Patient> Patient { get; set; }
-        public virtual DbSet<User> User { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -29,7 +28,6 @@ namespace apbd6.Models
             modelBuilder.ApplyConfiguration(new PatientConfig());
             modelBuilder.ApplyConfiguration(new PrescriptionConfig());
             modelBuilder.ApplyConfiguration(new PrescriptionMedicamentConfig());
-            modelBuilder.ApplyConfiguration(new UserConfig());
-        }
+\        }
     }
 }
